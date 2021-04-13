@@ -1,0 +1,9 @@
+php_value include_path '.;C:\wamp64\php\PEAR;C:\xampp\htdocs\k2'
+RewriteEngine On
+
+#RewriteRule ^authors/xml$ authors_to_xml.php [nc]
+#RewriteRule ^authors/json$ authors_to_json.php [nc]
+#RewriteRule ^authors/(.*)$ authors_webservice.php?format=$1 [nc]
+#RewriteRule ^authors/add/ln/(.*)/fn/(.*)/token/(.*)$ authors_rest_add.php?ln=$1&fn=$2&token=$3 [nc]
+RewriteRule ^api/get_data/(.*) index.php [nc]
+
